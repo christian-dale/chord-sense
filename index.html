@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChordSense</title>
+    <style>
+        canvas {
+            margin: 15px;
+        }
+
+        h2, p {
+            font-family: sans-serif;
+        }
+
+        .current-chord span a {
+            background-color: #eee;
+            border-radius: 10px;
+            padding: 3px 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>ChordSense</h2>
+    <p class="current-chord">Chord: <span></span></p>
+
+    <button class="btn-analyze">Analyze</button>
+    <button class="btn-reset">Reset</button><br>
+
+    <canvas width="300" height="640" style="border: 1px solid #eee;"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/tonal/browser/tonal.min.js"></script>
+
+    <script src="grid.js"></script>
+    <script src="note.js"></script>
+    <script src="chord.js"></script>
+    <script src="renderer.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
